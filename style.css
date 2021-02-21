@@ -1,0 +1,331 @@
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: Arial,sans-serif;
+    -webkit-font-smooting: antialiased;
+    background: black;
+    color: #FFFFFF;
+}
+
+/* page accueil, centraliser margin top, text align, uriliser rem pour tes boutons, revoir toute ta structure */
+.showcase
+{
+    position: relative;
+    background: url(images/backgroung.jpg) no-repeat center center / cover;
+    width: 100%;
+    height: 93vh;
+}
+
+.showcase::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    box-shadow: inset 120px 100px 250px #000000
+    z-index: 1;
+    
+}
+
+.showcase a
+{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.showcase-top
+{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.netflix-logo, .button-sign-in
+{
+    margin-top: 30px;
+    z-index: 2;
+}
+
+.netflix-logo
+{
+    margin-left: 50px;
+}
+
+.button-sign-in
+{
+    color: #fff;
+    background-color: red;
+    padding: 7px 17px;
+    margin-right: 50px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.45);
+    border-radius: 3px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+
+}
+
+.button-sign-in:hover
+{
+    opacity: 0.9;
+}
+
+.showcase-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 20px;
+
+}
+
+h1.headline, .continuity-headline
+{
+    font-size: 3.125rem;
+    line-height: 1.1;
+    z-index: 2;
+}
+
+.subtitle
+{
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 2.1;
+    margin-bottom: 25px;
+    z-index: 2;
+}
+
+p.text, .continuity-text
+{
+    font-size: 1.2rem;
+    font-weight: 400;
+    z-index: 2;
+}
+
+
+.subscribe
+{
+    z-index: 2;
+    position: absolute;
+    left: 29%;
+
+}
+
+.btn-begin
+{
+    position: absolute;
+    background-color: red;
+    color: white;
+    padding: 1.2rem 3rem;
+    border-radius: 3px;
+    font-weight: 100;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2;
+
+}
+
+.btn-begin:hover{
+    opacity: 0.9;
+}
+
+.adress-bar{
+    z-index: 2;
+}
+
+.email-container
+{ 
+    background : white;
+    width : 500px;
+    height : 62px;
+    display : inline-block;
+}
+
+.email-input
+{
+    display : block;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #8c8c8c;
+    width : 500px;
+    height : 62px;
+    border : none;
+}
+
+.grey-line
+{
+    background: #222223;
+    width: 100%;
+    height: 10px;
+}
+
+.tv-container
+{
+    margin-top: 30px; 
+    margin-bottom: 60px;
+    display: flex;
+    justify-content : center;
+    align-items: center;
+}
+
+.tv-element-content
+{
+    width: 500px;
+    height: 232px;
+    margin-right: 90px;
+}
+
+.tv-title
+{
+    font-size: 50px;
+}
+
+.tv-description
+{
+    font-size: 1.625rem;
+    margin-top: 20px;
+}
+
+.tv-image
+{
+    z-index: 2;
+}
+
+.tv-animation
+{
+    position: absolute;
+    right: 14%;
+    width: 29%;
+    height: 32%; 
+}
+
+
+.mobile-container
+{
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mobile-element-content
+{
+    width: 550px;
+    height: 232px;
+    margin-right: 90px;
+}
+
+.mobile-title
+{
+    font-size: 50px;
+}
+
+.mobile-description
+{
+    font-size: 1.625rem;
+    margin-top: 20px;
+}
+
+.mobile-image
+{
+    left: 70px;
+    right: 80px;
+   
+}
+.stranger-things-container
+{
+    display: flex;
+    justify-content: space-around;
+    width: 330px;
+    height: 96px;
+    padding: 10px 10px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 300px;
+    background: black;
+    border: 2px #3F3F3F solid;
+    border-radius: 5px;
+
+}
+
+
+.text-content
+{
+    margin: 15px 15px;
+    line-height: 1.3;
+}
+
+.text-download
+{
+    font-size: 14px;
+    white-space: nowrap;
+    color:#0071EB;
+}
+
+.download-icon
+{
+ 
+}
+
+.computer-container
+{
+    margin-top: 30px; 
+    margin-bottom: 60px;
+    display: flex;
+    justify-content : center;
+    align-items: center;
+}
+
+.computer-element-content
+{
+    width: 500px;
+    height: 232px;
+    margin-right: 90px;
+}
+
+.computer-title
+{
+    font-size: 50px;
+}
+
+.computer-description
+{
+    font-size: 1.625rem;
+    margin-top: 20px;
+}
+
+.computer-image
+{
+    z-index: 2;
+}
+
+.computer-animation
+{
+    position: absolute;
+    right: 18%;
+    margin-top: -60px;
+    width: 24%;
+    height: 32%; 
+}
+
+
+
+
+
+
+
+
+
